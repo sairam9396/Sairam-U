@@ -1,0 +1,50 @@
+Program 5:
+
+#include<stdio.h>
+
+int main() 
+{ str name[20]; int id=0, u=0, i=0; float billa=0, sur=0, tot=0;
+  printf("Enter the customer ID\n");
+  scanf("%d",&id);
+  printf("Enter the customer name\n");
+ /* for(i=0;i<20;i++)
+ /* { */
+  gets("%c",&name);
+ /*};*/
+  printf("Enter the number of units consumed\n");
+  scanf("%d",&u);
+  printf("Customer ID Number : %d\n", id);
+  /*for(i=0;i<20;i++)*/
+  /*  {*/
+  puts("Customer ID Name : %c\n", name);
+  /*}*/
+  printf("Units Consumed : %d\n", u);
+  if ( u>0 && u<200)
+  {
+      billa=(1.20*u);
+      printf("Amount Charges @Rs. 1.20 per unit : %f\n",billa);
+  }
+  else if ( u>=200 && u<400)
+  {
+      billa=(1.50*u);
+      printf("Amount Charges @Rs. 1.50 per unit : %f\n",billa);
+  }
+  else if ( u>=400 && u<600)
+  {
+      billa=(1.80*u);
+      printf("Amount Charges @Rs. 1.80 per unit : %f\n",billa);
+  }
+  else if ( u>=600)
+  {
+      billa=(2.00*u);
+      printf("Amount Charges @Rs. 2.00 per unit : %f\n",billa);
+  }
+  if (billa > 400)
+  {
+      sur = (0.15*billa);
+      printf("Surcharge Amount = Rs. %f\n", sur); 
+  }
+  tot = billa + sur;
+  printf("Total amount to be paid is %f\n", tot);
+  
+}
