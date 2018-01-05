@@ -1,0 +1,25 @@
+Day 2 Assg Program 6:
+
+6.Write a C program to convert a string to a long integer. 
+
+
+#include <stdio.h>
+
+int main(void)
+{
+long a; int s[9],i=0;
+printf("Enter a numeric string\n");
+for(i=0;i<9;i++)
+{
+    scanf("%d",&s[i]);
+}
+
+a = atol(s);
+
+printf("The string converted to long int is %ld\n", a);
+
+printf("The converted value, %ld divided by 2 is %ld\n", a, a / 2);
+
+return 0;
+
+}
